@@ -1,0 +1,87 @@
+footer {
+    background-color: black;
+    box-shadow: 0 0 20px black;
+    color: white;
+    padding: 3vh 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15vh;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer .page-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .page-nav a:hover {
+    text-decoration: underline;
+}
+
+footer .icon-rs {
+    display: flex;
+    align-items: flex-end;
+    gap: 2vw;
+}
+
+footer .icon-rs li {
+    display: inline;
+}
+
+footer .icon-rs img {
+    width: 2vw;
+    height: auto;
+    transition: .3s all ease-in-out;
+}
+
+footer .icon-rs img:hover {
+    transform: scale(1.3);
+}
+
+@media screen and (max-width: 425px) {
+    footer {
+        background-color: black;
+        box-shadow: 0 0 20px black;
+        color: white;
+        padding: 3vh 3vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 5vh;
+    }
+    
+    footer ul {
+        list-style-type: none;
+        margin-bottom: 2vh;
+    }
+    
+    footer .page-nav a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    footer .page-nav a:hover {
+        text-decoration: underline;
+    }
+    
+    footer .icon-rs {
+        display: flex;
+        align-items: flex-end;
+        gap: 2vw;
+    }
+    
+    footer .icon-rs li {
+        display: inline;
+    }
+    
+    footer .icon-rs img {
+        width: 10vw;
+        height: auto;
+        margin: 0 4vw;
+    }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/home.css">
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="scripts/main.js" defer></script>
+
+    <title>CV</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="formation.html">Formation</a></li>
+                <li><a href="experiences.html">Expériences Professionnelles</a></li>
+                <li><a href="comp-ci.html">Centres d'intérêt</a></li>
+            </ul>
+        </nav>
+
+        <div class="menu-burger">
+            <p>Léane Charpentier</p>
+            <div class="icon-menu-burger" id="btn_open_drawer"><ion-icon name="menu-outline"></ion-icon></div>
+        </div>
+    
+        <div id="overlay" class="hidden"></div>
+        <div id="navigation_drawer">
+            <div id="btn_close_drawer" class="croix"><ion-icon name="close-circle-outline"></ion-icon></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="formation.html">Formation</a></li>
+                <li><a href="experiences.html">Expériences Professionnelles</a></li>
+                <li><a href="comp-ci.html">Centres d'intérêt</a></li>
+            </ul>
+        </div>
+    
+        <div class="titre">
+            <h1>Léane Charpentier</h1>
+            <h2>Etudiante en<br>développement web</h2>
+        </div>        
+    </header>
+    <main>
+        <div class="container-profil-perso">
+            <img src="images/photo-id.png" alt="">
+            <div class="profil-perso">
+                <h3>Profil Personnel</h3>
+                <p>Je suis née le 5 mars 2004. Assidue et déterminée, j'effectue un Cycle Web & Multimédia à MyDigitalSchool Angers (Campus de l'ESPL) dans l'optique d'obtenir un Bachelor Développeur Web.</p>
+                <p>Je vous invite à découvrir mon parcours, mes expériences professionnelles, mes centres d'intérêt ainsi que mes compétences à travers ce CV interactif.</p>
+                <p>N'hésitez pas à me contacter pour plus d'informations.</p>
+                <div class="btn-pages">
+                    <a class="bouton" href="formation.html">Formation</a>                    
+                    <a class="bouton" href="experiences.html">Expériences professionnelles</a>                    
+                    <a class="bouton" href="comp-ci.html">Centres d'intérêt</a>                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <ul class="coordonnees">
+            <li>Léane Charpentier</li>
+            <li>leanecharpentierpro@outlook.com</li>
+            <li>06 38 98 34 47</li>
+        </ul>
+
+        <ul class="page-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="formation.html">Formation</a></li>
+            <li><a href="experiences.html">Expériences Professionnelles</a></li>
+            <li><a href="comp-ci.html">Centres d'intérêt</a></li>
+        </ul>
+
+        <ul class="icon-rs">
+            <li><a href="https://www.instagram.com/leanecharp_pro/" target="_blank"><img src="logo/logo-insta.png" alt=""></a></li>
+            <li><a href="https://twitter.com/leanecharp_pro" target="_blank"><img src="logo/logo-twitter.png" alt=""></a></li>
+            <li><a href="https://www.linkedin.com/in/l%C3%A9ane-charpentier-760097252/" target="_blank"><img src="logo/logo-linkedin.png" alt=""></a></li>
+            <li><a href="https://github.com/leanecharpentier" target="_blank"><img src="logo/github.png" alt=""></a></li>
+        </ul>
+    </footer>
+</body>
+</html>

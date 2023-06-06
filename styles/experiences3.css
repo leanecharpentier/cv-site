@@ -1,0 +1,326 @@
+/* Contenu Principal */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h3, h4 {
+    font-weight: 400;
+    font-size: 21px;
+    text-transform: uppercase;
+}
+
+.frise-chronologique {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: 10vh auto;
+    height: max-content;
+}
+
+
+.formes {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    height: 100%
+}
+
+.ligne-verticale {
+    flex-grow: 1;
+    position: absolute;
+    background-color: #2E4156;
+    width: 0.5vw;
+    height: 65vw;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 425px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    h3, h4 {
+        font-weight: 400;
+        font-size: 21px;
+        text-transform: uppercase;
+    }
+    
+    .frise-chronologique {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        margin: 12vh auto;
+        margin-bottom: 5vh;
+        height: max-content;
+    }
+    
+    
+    .formes {
+        display: flex;
+        flex-grow: 1;
+        justify-content: flex-start;
+        height: 100%;
+    }
+    
+    .ligne-verticale {
+        flex-grow: 1;
+        position: absolute;
+        background-color: #2E4156;
+        width: 0.5vw;
+        height: 160vh;
+        border-radius: 10px;
+        margin-left: 7vw;
+    }
+}
+
+/* Bloc date à gauche et texte à droite */
+
+.bloc-experience-droite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 10vh 0;
+}
+
+.description-experience-droite {
+    display: flex;
+    align-items: center;
+    gap: 10vw;
+    width: 90vw;
+}
+
+.ligne-horizontale-droite {
+    position: absolute;
+    left: 50vw;
+    background-color:  #2E4156;
+    height: 1vh;
+    width: 7.5vw;
+    border-radius: 10px ;
+}
+
+.date-gauche {
+    left: 8vw;
+    text-align: right;
+}
+
+.mission-droite {
+    width: 50vw;
+}
+
+@media screen and (max-width: 425px) {
+    .bloc-experience-droite {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 10vh 0;
+    }
+    
+    .description-experience-droite {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1vw;
+        width: 90vw;
+        margin-left: 12vw;
+    }
+    
+    .ligne-horizontale-droite {
+        display: none;
+        position: absolute;
+        left: 50vw;
+        background-color:  #2E4156;
+        height: 0.5vh;
+        width: 7.5vw;
+        border-radius: 10px;
+    }
+    
+    .date-gauche {
+        left: 0vw;
+        text-align: center;
+    }
+    
+    .mission-droite {
+        width: 75vw;
+        text-align: left;
+    }
+}
+
+
+/* Bloc date à droite et texte à gauche */
+
+.bloc-experience-gauche {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 10vh 0;
+}
+
+.description-experience-gauche {
+    display: flex;
+    align-items: center;
+    gap: 10vw;
+    width: 90vw;
+}
+
+.ligne-horizontale-gauche {
+    position: absolute;
+    right: 50vw;
+    background-color:  #2E4156;
+    height: 1vh;
+    width: 7.5vw;
+    border-radius: 10px ;
+}
+
+.date-droite {
+    right: 7vw;
+}
+
+.mission-gauche {
+    width: 50vw;
+    text-align: right;
+}
+
+@media screen and (max-width: 425px) {
+    .bloc-experience-gauche {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 10vh 0;
+    }
+    
+    .description-experience-gauche {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 1vw;
+        width: 90vw;
+        margin-left: 12vw;
+    }
+    
+    .ligne-horizontale-gauche {
+        display: none;
+        position: absolute;
+        right: 50vw;
+        background-color:  #2E4156;
+        height: 1vh;
+        width: 7.5vw;
+        border-radius: 10px;
+    }
+    
+    .date-droite {
+        right: 0;
+    }
+    
+    .mission-gauche {
+        width: 75vw;
+        text-align: left;
+    }
+}
+
+/* Eléments en commun */
+
+.losange {
+    position: relative;
+    height: 3vw;
+    width: 3vw;
+    background: #2E4156;
+    -ms-transform: rotate(45deg); /* Internet Explorer */
+    -moz-transform: rotate(45deg); /* Firefox */
+    -webkit-transform: rotate(45deg); /* Safari et Chrome */
+    -o-transform: rotate(45deg); /* Opera */
+    border-radius: 5px;
+}
+
+.date-droite, .date-gauche {
+    text-transform: uppercase;
+    position: relative;
+    width: 50vw;
+}
+
+@media screen and (max-width: 425px) {
+    .losange {
+        position: relative;
+        height: 3vw;
+        width: 3vw;
+        background: #2E4156;
+        -ms-transform: rotate(45deg); /* Internet Explorer */
+        -moz-transform: rotate(45deg); /* Firefox */
+        -webkit-transform: rotate(45deg); /* Safari et Chrome */
+        -o-transform: rotate(45deg); /* Opera */
+        border-radius: 5px;
+        right: 6vw;
+    }
+    
+    .date-droite, .date-gauche {
+        text-transform: uppercase;
+        position: relative;
+        width: 70vw;
+        text-align: left;
+    }
+}
+
+/* Bloc Compétences Développées */
+
+.competences-developpees {
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 40px 60px;
+    border-radius: 20px;
+    background-color: #2E4156;
+    color: white;
+}
+
+.competences-developpees h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.competences-developpees p {
+    line-height: 30px;
+    text-align: center;
+}
+
+.competences-developpees b {
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: 900;
+}
+
+@media screen and (max-width: 425px) {
+    .competences-developpees {
+        width: fit-content;
+        margin: auto;
+        padding: 6vh 8vw;
+        padding-bottom: 10vh;
+        border-radius: 0;
+        background-color: #2E4156;
+        color: white;
+    }
+    
+    .competences-developpees h2 {
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        font-size: 23px;
+    }
+    
+    .competences-developpees p {
+        line-height: 30px;
+        text-align: justify;
+    }
+    
+    .competences-developpees b {
+        text-transform: uppercase;
+        font-size: 19px;
+        font-weight: 900;
+    }
+
+    footer {
+        margin-top: -1vh;
+    }
+}

@@ -1,0 +1,117 @@
+/* Contenu Principal */
+
+h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+.frise-chronologique {
+    width: 90vw;
+    margin: 10vh auto;
+}
+
+
+.formes {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.ligne-verticale {
+    position: absolute;
+    background-color: #16262e;
+    width: 0.5vw;
+    height: 150vh;
+    border-radius: 10px;
+}
+
+/* Bloc date à gauche et texte à droite */
+
+.bloc-experience-droite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 15vh 0;
+}
+
+.description-experience-droite {
+    display: flex;
+    align-items: center;
+    gap: 10vw;
+    width: 90vw;
+}
+
+.ligne-horizontale-droite {
+    position: absolute;
+    left: 50vw;
+    background-color:  #16262e;
+    height: 1vh;
+    width: 7.5vw;
+    border-radius: 10px ;
+}
+
+.date-gauche {
+    left: 8vw;
+    text-align: right;
+}
+
+.mission-droite {
+    width: 50vw;
+}
+
+
+/* Bloc date à droite et texte à gauche */
+
+.bloc-experience-gauche {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 15vh 0;
+}
+
+.description-experience-gauche {
+    display: flex;
+    align-items: center;
+    gap: 10vw;
+    width: 90vw;
+}
+
+.ligne-horizontale-gauche {
+    position: absolute;
+    right: 50vw;
+    background-color:  #16262e;
+    height: 1vh;
+    width: 7.5vw;
+    border-radius: 10px ;
+}
+
+.date-droite {
+    right: 7vw;
+}
+
+.mission-gauche {
+    width: 50vw;
+    text-align: right;
+}
+
+/* Eléments en commun */
+
+.losange {
+    position: relative;
+    height: 3vw;
+    width: 3vw;
+    background: #16262e;
+    -ms-transform: rotate(45deg); /* Internet Explorer */
+    -moz-transform: rotate(45deg); /* Firefox */
+    -webkit-transform: rotate(45deg); /* Safari et Chrome */
+    -o-transform: rotate(45deg); /* Opera */
+    border-radius: 5px;
+}
+
+.date-droite, .date-gauche {
+    font-size: 3.5vh;
+    text-transform: uppercase;
+    position: relative;
+    width: 50vw;
+}

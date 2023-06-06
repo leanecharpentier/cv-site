@@ -1,0 +1,105 @@
+main {
+    width: 85%;
+    margin: 4% auto;
+}
+
+
+.formes {
+    display: flex;
+    justify-content: center;
+}
+
+.ligne-verticale {
+    position: absolute;
+    background-color: #16262e;
+    width: 5px;
+    height: 850px;
+    border-radius: 10px;
+}
+
+/* Bloc date à gauche et texte à droite */
+
+.bloc-experience-droite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.description-experience-droite {
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    width: 100%;
+}
+
+.ligne-horizontale-droite {
+    position: absolute;
+    left: 50%;
+    background-color:  #16262e;
+    height: 5px;
+    width: 90px;
+    border-radius: 10px ;
+}
+
+.date-gauche {
+    position: relative;
+    left: 8%;
+    width: 50%;
+    text-align: right;
+}
+
+.mission-droite {
+    width: 50%;
+}
+
+
+/* Bloc date à droite et texte à gauche */
+
+.bloc-experience-gauche {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.description-experience-gauche {
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    width: 100%;
+}
+
+.ligne-horizontale-gauche {
+    position: absolute;
+    right: 50%;
+    background-color:  #16262e;
+    height: 5px;
+    width: 90px;
+    border-radius: 10px ;
+}
+
+.date-droite {
+    position: relative;
+    right: 8%;
+    width: 50%;
+}
+
+.mission-gauche {
+    width: 50%;
+    text-align: right;
+}
+
+/* Eléments en commun */
+
+.losange {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    background: #16262e;
+    -ms-transform: rotate(45deg); /* Internet Explorer */
+    -moz-transform: rotate(45deg); /* Firefox */
+    -webkit-transform: rotate(45deg); /* Safari et Chrome */
+    -o-transform: rotate(45deg); /* Opera */
+    border-radius: 5px;
+}
